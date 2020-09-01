@@ -20,7 +20,7 @@ Você deverá postar um documento com no máximo 05 páginas que descreva o mét
 
 #### Windows
 
-1. Faça a compilação do programa tanto no Cliente como no Servidor através do comando, no diretório raiz (Bhaskara):
+1. Faça a compilação do programa tanto no Cliente como no Servidor através do comando:
 `javac ClienteCalc/*.java && javac ClienteCalc/*.java`
 
 2. Comando para criação dos stubs sob demanda

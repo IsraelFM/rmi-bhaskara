@@ -6,6 +6,5 @@ import java.rmi.*;
 public interface InterfaceServidorMat extends Remote
 {
     public double calculateDelta(double a, double b, double c) throws RemoteException;
-    public double calculateX1(double a, double b, double delta) throws RemoteException;
-    public double calculateX2(double a, double b, double delta) throws RemoteException;
+    public String calculateBhaskara(double a, double b, double delta) throws RemoteException;
 }

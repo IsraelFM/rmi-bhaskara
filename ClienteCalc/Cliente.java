@@ -46,8 +46,7 @@ public class Cliente
                 System.out.println("Delta não possui raiz!");
             }
             else{
-                System.out.println("x\' = " + cliente.x1(a, b, delta));
-                System.out.println("x\" = " + cliente.x2(a, b, delta));
+                System.out.println(cliente.bhaskara(a, b, delta));
             }
 		}
 		catch (final Exception e)
@@ -62,10 +61,7 @@ public class Cliente
 	public double delta(double a, double b, double c) throws RemoteException{
         return msi.calculateDelta(a, b, c);
     }
-    public double x1(double a, double b, double delta) throws RemoteException{
-        return msi.calculateX1(a, b, delta);
+    public String bhaskara(double a, double b, double delta) throws RemoteException{
+        return msi.calculateBhaskara(a, b, delta);
     }
-    public double x2(double a, double b, double delta) throws RemoteException{
-        return msi.calculateX2(a, b, delta);
-	}
 }

@@ -16,14 +16,11 @@ public class ServidorMat extends UnicastRemoteObject implements InterfaceServido
         System.out.println("Novo Servidor instanciado...");
     }
 
-    public double calculateX1(double a, double b, double delta) throws RemoteException
+    public String calculateBhaskara(double a, double b, double delta) throws RemoteException
     {
-        return (double) ((-(b) + Math.sqrt(delta)) / (2 * a));
-    }
-
-    public double calculateX2(double a, double b, double delta) throws RemoteException
-    {
-        return (double) ((-(b) - Math.sqrt(delta)) / (2 * a));
+        double x1 = (double) ((-(b) + Math.sqrt(delta)) / (2 * a));
+        double x2 = (double) ((-(b) - Math.sqrt(delta)) / (2 * a));
+        return "S = { " + x1 + ", " + x2 + "}";
     }
 
     public double calculateDelta(double a, double b, double c) throws RemoteException
